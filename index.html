@@ -1,84 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Landing Page</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            color: #333;
-            background-color: #f4f4f9;
-        }
-        header {
-            text-align: center;
-            padding: 50px 20px;
-            background-color: #4CAF50;
-            color: white;
-        }
-        header h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-        header p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-        header a {
-            padding: 10px 25px;
-            font-size: 1rem;
-            color: #4CAF50;
-            background-color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        header a:hover {
-            background-color: #ddd;
-        }
-        section {
-            padding: 40px 20px;
-            text-align: center;
-        }
-        section h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-        section p {
-            font-size: 1rem;
-            margin-bottom: 10px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AcDesign - Crypto Nodes & Airdrops</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0d1117;
+      color: #c9d1d9;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(120deg, #0d1117, #1f6feb);
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    .btn {
+      display: inline-block;
+      background: #1f6feb;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 10px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #238636;
+    }
+    .section {
+      padding: 40px;
+      text-align: center;
+    }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .portfolio-item {
+      background: #161b22;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .portfolio-item h3 {
+      margin: 0 0 10px;
+      color: #58a6ff;
+    }
+    footer {
+      background: #161b22;
+      color: #8b949e;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    .contact-form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      background: #161b22;
+      color: #c9d1d9;
+    }
+    .contact-form button {
+      background: #1f6feb;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background: #238636;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-        <p>Your journey starts here. Build, learn, and grow with us.</p>
-        <a href="#learn-more">Learn More</a>
-    </header>
+  <header>
+    <h1>Welcome to AcDesign</h1>
+    <p>Simplifying Crypto Nodes & Airdrops for Enthusiasts</p>
+    <a href="#portfolio" class="btn">Explore Portfolio</a>
+    <a href="#contact" class="btn">Get Started</a>
+  </header>
 
-    <section>
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
-    </section>
+  <section class="section" id="portfolio">
+    <h2>Our Portfolio</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <h3>Project 1</h3>
+        <p>Details about the first crypto node project.</p>
+      </div>
+      <div class="portfolio-item">
+        <h3>Project 2</h3>
+        <p>Details about the second crypto node project.</p>
+      </div>
+      <div class="portfolio-item">
+        <h3>Project 3</h3>
+        <p>Details about the third crypto node project.</p>
+      </div>
+    </div>
+  </section>
 
-    <section>
-        <h2>Services</h2>
-        <p>Explore the amazing services we offer to help you achieve your goals.</p>
-    </section>
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
-    <footer>
-        <p>&copy; 2024 Simple Landing Page. All Rights Reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2024 AcDesign. All Rights Reserved.</p>
+    <p>
+      <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+    </p>
+  </footer>
 </body>
 </html>
